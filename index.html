@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juan Pablo Paz - Hoja de Vida</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Pablo Paz - Hoja de Vida</title>
+  <!-- fon awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- font oswal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+  <!-- link boostrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <!-- custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Juan Pablo Paz</h1>
+
+  <div class="conteiner">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo-nav" src="img/logo1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="#">Mi perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Aspiraciones</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Mis proyectos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="spotity.html">Consumir API de Spotity</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img class="img-carrusel1" src="img/slider1.jpeg" class="d-block w-100" alt="slide1">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="img-carrusel2" src="img/slider2.jpg" class="d-block w-100" alt="slide2">
+        </div>
+        <div class="carousel-item" data-bs-interval="3000">
+          <img class="img-carrusel3" src="img/slider3.jpg" class="d-block w-100" alt="slide3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="bg-item">
+      <h2 class="subtitle-uno"> Mi perfil <img src="img/perfil.png" alt=""></h2>
+    </div>
+    <!-- showcase -->
+    <header class="showcase">
+      <br><br>
+      <div class="card" style="width: 14rem;background-color: black;">
+        <img class="img-portada" src="img/imgportada.jpeg" class="card-img-top" alt="...">
+      </div>
+      <br><br>
+      <p>Me llamo Juan pablo paz villa, tengo 28 años de edad me encuentro el la ciudad de medellin, me considero un hombre responsables
+        simpre con metas por cumplir, estudio desarrollo de sotfware en el cesde curso el tercer semestre, deso enfocarme en el mundo del desarrollo como frontend especializarme en el
+        este campo y a medida que avanzo convertirme en desarrollador full stack. 
+      </p>
+
+    </header>
+
+    <!-- tecnologias -->
+    <div class="bg-item">
+      <h2 class="subtitle-uno"> Tecnologias <img src="img/tecnologia.png" alt=""></h2>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/imgjs.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Javascript</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/imghtml.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">This is a short card.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/imgphp.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">PHP</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OTRAS HABILIDADES -->
+  <div class="bg-item">
+    <h2 class="subtitle-uno"> Otras habilidades <img src="img/habilidades.png" alt=""></h2>
+  </div>
+  <main class="showcase-one">
+    <div class="clearfix">
+      <img src="img/imgwordpress.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="wordpress-css">
+      <h5 class="subtitle-two">CSS:</h5>
+      <p>
+        of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few
+        meaningless phrases here to demonstrate how the columns interact here with the floated image.
+      </p>
+      <h5 class="subtitle-two">Wordpress:</h5>
+      <p>
+        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with
+        some actual content in here, rather than just this boring placeholder text that goes on and on, but actually
+        conveys no tangible information at. It simply takes up space and should not really be read.
+      </p>
+    </div>
+  </main>
+  <div class="bg-item">
+    <h2 class="subtitle-uno"><img src="img/disponible.png" alt=""></h2>
+  </div>
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <nav class="row">
+        <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+          <img src="img/logo1.png" alt="logo1" class="logo-nav__footer">
+        </a>
+        <!-- MENU FOOTER -->
+        <ul class="col-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase">direccion</li>
+          <li><a href="" class="text-rest"></a>link1</li>
+          <li><a href="" class="text-rest"></a>link2</li>
+          <li><a href="" class="text-rest"></a>link3</li>
+        </ul>
+        <ul class="col-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase">Contactos</li>
+          <li><a href="" class="text-rest"></a>link1</li>
+          <li><a href="" class="text-rest"></a>link2</li>
+          <li><a href="" class="text-rest"></a>link3</li>
+        </ul>
+        <!-- Redes sociales -->
+        <ul class="col-3 list-unstyled">
+          <li class="font-weight-bold text-uppercase">Redes sociales</li>
+          <br>
+          <li class="d-flex justify-content-between">
+            <a href="" class="text-rest">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="text-rest">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="" class="text-rest">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
