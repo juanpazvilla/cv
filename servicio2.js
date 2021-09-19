@@ -68,6 +68,7 @@ function pintarDatos(datos){
         console.log(cancion.preview_url)
         console.log(cancion.album.images[0].url)
         console.log(cancion.popularity)
+        console.log(cancion.album.name)
 
         //crear un div con js
         let columna=document.createElement("div")
@@ -102,10 +103,17 @@ function pintarDatos(datos){
         popularidad.classList.add("bg-dark")
         popularidad.textContent=cancion.popularity
 
+        //creo una etiqueta de album
+        let album=document.createElement("h3")
+        album.classList.add("w-100")
+        album.classList.add("bg-dark")
+        album.textContent=cancion.album.name
+
         //PADRES E HIJOS
         tarjeta.appendChild(imagen)
         tarjeta.appendChild(nombre)
         tarjeta.appendChild(popularidad)
+        tarjeta.appendChild(album)
         tarjeta.appendChild(audio)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
